@@ -1,0 +1,27 @@
+
+
+<table class="table">
+
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+        <th>Address</th>
+</tr>
+{% for i in user %}
+<tr>
+    <td>{{i.uname}}</td>
+    <td>{{i.uemail}}</td>
+    <td>{{i.uaddress}}</td>
+    <td>
+        <a href="edit/{{i.id}}">Edit</a>
+    </td>
+    <td>
+        <a href="delete/{{i.id}}">Delete</a>
+    </td>
+</tr>
+
+{% endfor%}
+
+</table>>
+
+<p><a href="{% url 'logout' %}">Logout</a></p>

@@ -1,0 +1,20 @@
+<form method="POST" action="add">
+    {% csrf_token %}
+
+     <label>Name:</label>
+    <div>{{form.uname}}</div>
+     <label>Email:</label>
+    <div>{{form.uemail}}</div>
+     <label>Password</label>
+    <div>{{form.upassword}}</div>
+         <label>ConfirmPassword</label>
+    <div>{{form.uconfirmpassword}}</div>
+
+         <label>Address</label>
+    <div>{{form.uaddress}}</div>
+
+    <div>
+        <button type="submit">Signup</button>
+    </div>
+</form>
+</html>
